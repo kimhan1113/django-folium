@@ -8,3 +8,12 @@ class EVChargingLocation(models.Model):
 
     def __str__(self):
         return self.station_name
+    
+
+class KoreaCitiesLocation(models.Model):
+    city_name = models.CharField(max_length=250)
+    latitude = models.FloatField()
+    longitude = models.FloatField()
+
+    def __str__(self):
+        return self.city_name
